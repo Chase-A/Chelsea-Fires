@@ -1,0 +1,160 @@
+:root{
+    --dark-clr: #161616;
+    --light-clr: #f9f9f9;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Navbar */
+
+main{
+    margin-top: 70px;
+}
+
+nav a{
+    color:var(--light-clr);
+}
+
+header{
+    background: var(--dark-clr);
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    width: 350px;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.weather-link{
+    text-decoration: none;
+}
+
+.weather{
+    padding-left: 15px;
+    display: flex;
+    width: 65px;
+}
+
+.wi{
+    display: none;
+}
+
+/* Hero */
+
+.site-title{
+    font-size: 48px;
+    text-align: center;
+}
+
+.map-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin: 30px 60px;
+}
+
+.cta-btn{
+    color: var(--light-clr);
+    background: var(--dark-clr);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Stops */
+
+.all-stops-container{
+    margin-top: 60px;
+}
+
+.stop-container{
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.section-image{
+    max-width: 100%;
+}
+
+.section-image-portrait, .extra-text, .read-less{
+    display: none;
+}
+
+.read-more:hover, .read-less:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.stop-text-container h2, .stop-text-container h4, .stop-text-container p {
+    /* border: 2px solid salmon; */
+    margin: 10px auto;
+}
+
+/* Intro and Conclusion */
+
+.intro-container{
+    margin: 10px;
+}
+
+.intro-container h1{
+    margin-bottom: 0;
+}
+
+.intro-container p {
+    margin-top: 8px;
+}
+
+/* Interview */
+
+.interview-container{
+    margin: 10px;
+}
+
+.interviewee-headshot{
+    width: 80%;
+    max-width: 250px;
+}
+
+.transcript-container{
+    display: grid;
+    grid-template-columns: 22% 75%;
+    column-gap: 3%;
+    row-gap: 12px;
+}
+
+.transcript-container p{
+    /* border: 2px solid salmon; */
+    margin: 0;
+}
+
+
+/* Bibliogrphy */
+
