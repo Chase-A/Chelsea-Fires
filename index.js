@@ -4,22 +4,28 @@ function toggleText(id){
     const state = id.slice(1, 2)
     const currentRM = document.getElementById(`rm${index}`)
     const currentRL = document.getElementById(`rl${index}`)
-    const currentLand = document.getElementById(`si-land${index}`)
-    const currentPort = document.getElementById(`si-port${index}`)
+    const currentPres = document.getElementById(`si-pres${index}`)
+    const currentPast = document.getElementById(`si-past${index}`)
+    const currentPresCaption = document.getElementById(`cap-pres${index}`)
+    const currentPastCaption = document.getElementById(`cap-past${index}`)
     const hiddenText = document.getElementById(`text${index}`)
  
      if (state === 'm'){
          currentRM.style.display = 'none'
          currentRL.style.display = 'initial'
-         currentLand.style.display = 'none'
-         currentPort.style.display = 'initial'
+         currentPres.style.display = 'none'
+         currentPast.style.display = 'initial'
+         currentPastCaption.style.display = 'initial'
+         currentPresCaption.style.display = 'none'
          hiddenText.style.display = 'initial'
      }
     else{
      currentRM.style.display = 'initial'
      currentRL.style.display = 'none'
-     currentLand.style.display = 'initial'
-     currentPort.style.display = 'none'
+     currentPres.style.display = 'initial'
+     currentPast.style.display = 'none'
+     currentPastCaption.style.display = 'none'
+     currentPresCaption.style.display = 'initial'
      hiddenText.style.display = 'none' 
     }
  }
@@ -55,7 +61,7 @@ function toggleText(id){
          snowSVG.style.display = 'initial';
          console.log('snow')
      }
-     else if(weatherResponse === 800 || weatherResponse === 801){
+     else if(weatherResponse === 800 || weatherResponse === 801 || weatherResponse === 802){
          sunSVG.style.display = 'initial';
          console.log('sun')
      }
