@@ -292,4 +292,8 @@ footer a:hover{
     .wi{
         display: none;
     }
+
+    .weather-link{
+        padding-right: 10px;
+    }
 }
