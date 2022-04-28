@@ -296,4 +296,8 @@ footer a:hover{
     .weather-link{
         padding-right: 10px;
     }
+
+    .nav-links a{
+        font-size: 12px;
+    }
 }

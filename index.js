@@ -40,6 +40,7 @@ function toggleText(id){
  }
  
  async function renderWeather(){
+
      const tempElem = document.getElementById('current-temp')
      const cloudSVG = document.getElementById('wi-cloud')
      const rainSVG = document.getElementById('wi-rain')
